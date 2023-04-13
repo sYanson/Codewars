@@ -4,13 +4,16 @@
 5, "Hello" -> "HelloHelloHelloHelloHello"
 
 // My solution
+function solution(str){
+  let newstr = "";
+  for (let i = (str.length - 1); i >= 0; --i) { 
+    newstr += str[i]; // n, 3, 2, 1, 0
+  } return newstr;
+}
+//////////////////////////////////////////////////
+
 function repeatStr (n, s) {
-    if (n % 1 == 0) { //условие на integer
-      if (typeof s == string) { //условие на тип string
-        for (i = 1; i < n; ++i) { // n = 3
-          s += s;
-        }
-      }
-    }
-    return s;
-  } // не работает(
+  if (n % 1 == 0 && typeof s == "string") {
+    return s.repeat(n);
+  }
+}

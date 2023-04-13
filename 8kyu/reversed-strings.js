@@ -10,3 +10,11 @@ function solution(str) {
     str = str.join(""); // array -> string
     return str;
   }
+  //////////////////////////////////////////////
+  
+  function solution(str){
+    let newstr = "";
+    for (let i = (str.length - 1); i >= 0; --i) { 
+      newstr += str[i]; // n, 3, 2, 1, 0
+    } return newstr;
+  }
