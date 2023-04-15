@@ -4,9 +4,9 @@
 
 // My solution
 function removeChar(str) { // world [0, 1, 2, 3, 4]
- let newstr = "";
- for (i = 1; i < str.lenght - 2; ++i) { // i = 1; i < 5 - 2; ignore, 2, 3
-   newstr += str[i]; // str[1] + str[2] + str[3], 3 < 3 -> end
- } return newstr;
+  var newstr = "";
+   for (i = 1; i <= str.length - 2; ++i) { // i = 1; 3; 
+     newstr += str[i];                    // str[1] + str[2] + str[3], 3 < 3 -> end
+   } return newstr;
+ }; 
  
-}; // не работает, не видит строку
